@@ -1,38 +1,102 @@
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.widget {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+select{
+  padding: 8px 16px;
+}
+
+button {
+  background-color:white;
+  color: black;
+  border: 1px solid grey;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+.search-bar {
+  margin: 20px 0;
+  text-align: right;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-widget-form {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 50%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.add-widget-form input,
+.add-widget-form select {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.add-widget-form input{
+  width: 98% !important;
+}
+
+.add-widget-form button {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background-color: white;
+  color: black;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-widget-form button:hover {
+  background-color: lightgray;
 }
